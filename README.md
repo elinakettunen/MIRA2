@@ -19,5 +19,7 @@ Data files excluded for privacy reasons.
     1. `sync-data.sh` on MacOS
     1. `copy-data.bat` on windows
 1. create `src/secrets.py` and type in `excel_pw = 'FILE_PASSWORD'`
-1. run `collate_master_data.ipynb` to generate a master data file in `data/main` for analysis
+1. run data processing and pseudonymization
+    1. `collate_master_data.ipynb` to generate a master file of participants `data/main/participants_master.xlsx`
+    1. `process_food_intake_records.ipynb` to read in food diaries and generate `data/main/intakes_per_participant.xlsx`
 1. delete `RAW` from you workstation to remove confidential data
