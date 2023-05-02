@@ -8,8 +8,8 @@ Data files excluded for privacy reasons.
 ## Analyzing results
 1. clone the repository
 1. copy prepared data files from the shared drive at HY
-  1. `data/main/participants_master.xlsx`
-  1. `intakes_per_participant_detailed_asep.xlsx`
+    1. `data/main/participants_master.xlsx`
+    1. `intakes_per_participant_detailed_asep.xlsx`
 1. run `analysis.ipynb`
 1. continue from there
 
