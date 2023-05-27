@@ -1,6 +1,6 @@
 .DS_Store
 out
-src/preprocess/secrets.py
+src/preprocess/mysecrets.py
 *.pyc
 data/public/~$*
 **/.ipynb_checkpoints
