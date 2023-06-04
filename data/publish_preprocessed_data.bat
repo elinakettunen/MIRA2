@@ -1,1 +1,1 @@
-robocopy /s .\main "P:\h840\mira\MIRA2\analysis data model\data\main"
+robocopy /s /xo .\main "P:\h840\mira\MIRA2\analysis data model\data\main"
