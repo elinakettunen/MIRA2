@@ -1,6 +1,6 @@
 # Data folder hierarchy
 
-`public/` for files that are intetionally published alongisde the code for peer review
+`public/` for files that are intetionally published alongside the code for peer review
 - manually compiled database of animal origin proportion per food item
 - taxonomy of food recipe codes into classes
 
@@ -11,3 +11,15 @@
 # Rules of thumb
 
 - Never manually edit files received as exports from systems. Such as Aromi or RedCAP. We should be able to to just get a new export at any time and overwrite the previous file.
+
+# Workflow for updating shared master data files
+1. Open VPN and mount the university shared drive
+1. Latest data from source systems. If they have changed.
+    1. Export and download new files to `data/RAW` on the file server (aka `P:\`)
+1. Use `get_raw_data` script to copy over files from server to local directory
+1. Run and modify preprocessing code
+    1. `git pull` to have latest code
+    1. Edit notebooks in `src/preprocess` and run them to produce new output in `data/main`
+    1. `git commit` and `git push`
+1. Use `publish_preprocessed_data` script to copy new files in `data/main` from local machine to file server
+1. Update `Muutosloki.docx` on the server to describe your changes
